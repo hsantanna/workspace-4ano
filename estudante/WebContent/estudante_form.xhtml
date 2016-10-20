@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <title>Formulário de Registro de Estudante</title>
+    </h:head>
+
+	<h:body>
+
+		<h:form>
+
+			Primeiro nome: <h:inputText value="#{estudante.firstName}" />		
+
+            <br/><br/>
+
+            Segundo nome: <h:inputText value="#{estudante.lastName}" />
+
+<br/><br/>
+
+	 		Pais: 			
+			<h:selectOneMenu value="#{estudante.pais}">
+				<f:selectItems value="#{estudante.opcoesPais}" />
+			</h:selectOneMenu>		 
+			
+			<!-- 
+			<h:selectOneMenu value="#{estudante.pais}">
+				<f:selectItem itemValue="Brasil" itemLabel="Brasil" />
+				<f:selectItem itemValue="France" itemLabel="France" />
+				<f:selectItem itemValue="Germany" itemLabel="Germany" />
+				<f:selectItem itemValue="India" itemLabel="India" />
+				<f:selectItem itemValue="Turkey" itemLabel="Turkey" />
+				<f:selectItem itemValue="United Kingdom" itemLabel="United Kingdom" />
+				<f:selectItem itemValue="United States" itemLabel="United States" />
+			</h:selectOneMenu>		 
+			 -->
+			 
+
+            <br/><br/>
+
+		    <h:commandButton value="Enviar" action="#{estudante.salvar}" />
+		    
+		    
+
+		</h:form>
+		
+	</h:body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
