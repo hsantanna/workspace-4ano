@@ -12,11 +12,11 @@
 
 		<h:form>
 
-			Primeiro nome: <h:inputText value="#{estudante.firstName}" />		
+			Nome: <h:inputText value="#{estudante.firstName}" />		
 
             <br/><br/>
 
-            Segundo nome: <h:inputText value="#{estudante.lastName}" />
+            Sobrenome: <h:inputText value="#{estudante.lastName}" />
 
 <br/><br/>
 
@@ -36,8 +36,27 @@
 				<f:selectItem itemValue="United States" itemLabel="United States" />
 			</h:selectOneMenu>		 
 			 -->
-			 
 
+            <br/><br/>
+            
+            Linguagem de Programação Favorita: 				
+			<h:selectOneRadio value="#{estudante.linguagemFavorita}">
+				<f:selectItem itemValue="Java" itemLabel="Java" />
+				<f:selectItem itemValue="Python" itemLabel="Python" />
+				<f:selectItem itemValue="PHP" itemLabel="PHP" />
+				<f:selectItem itemValue="Ruby" itemLabel="Ruby" />
+			</h:selectOneRadio>			 
+						 
+            <br/><br/>
+
+			Linguagems de Programação Favoritas: 				
+			<h:selectManyCheckbox value="#{estudante.linguagensFavoritas}">
+				<f:selectItem itemValue="Java" itemLabel="Java" />
+				<f:selectItem itemValue="Python" itemLabel="Python" />
+				<f:selectItem itemValue="PHP" itemLabel="PHP" />
+				<f:selectItem itemValue="Ruby" itemLabel="Ruby" />
+			</h:selectManyCheckbox>			 
+						 
             <br/><br/>
 
 		    <h:commandButton value="Enviar" action="#{estudante.salvar}" />

@@ -11,6 +11,12 @@ public class Estudante {
 	private String firstName;
 	private String lastName;
 	private String pais;
+	private String linguagemFavorita;
+	
+	
+	// como a resposta do h:selectManyCheckbox pode incluir mais de uma
+	// resposta marcada, é preciso que seja um vetor
+	private String[] linguagensFavoritas;
 	
 	// lista de países para selecionar na caixa de seleção
 	List<String> opcoesPais;
@@ -64,5 +70,22 @@ public class Estudante {
 		this.pais = pais;
 	}
 
+	public String getLinguagemFavorita() {
+		return linguagemFavorita;
+	}
+
+	public void setLinguagemFavorita(String linguagemFavorita) {
+		this.linguagemFavorita = linguagemFavorita;
+	}
+
+	public String[] getLinguagensFavoritas() {
+		return linguagensFavoritas;
+	}
+
+	public void setLinguagensFavoritas(String[] linguagensFavoritas) {
+		this.linguagensFavoritas = linguagensFavoritas;
+	}
+	
+	
 	
 }
