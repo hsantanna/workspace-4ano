@@ -23,17 +23,22 @@ public class Estudante {
 	
 	public Estudante(){
 		
-			// preenche lista de países
-			opcoesPais = new ArrayList<>();
-				
-			opcoesPais.add("Brasil");
-			opcoesPais.add("France");
-			opcoesPais.add("Germany");
-			opcoesPais.add("India");
-			opcoesPais.add("Turkey");
-			opcoesPais.add("United Kingdom");
-			opcoesPais.add("United States");
-		
+		//popular dados do formulário com valores já preenchidos
+		firstName = "João";
+		lastName = "da Silva";
+		pais = "France";
+	
+		// preenche lista de países
+		opcoesPais = new ArrayList<>();
+			
+		opcoesPais.add("Brasil");
+		opcoesPais.add("France");
+		opcoesPais.add("Germany");
+		opcoesPais.add("India");
+		opcoesPais.add("Turkey");
+		opcoesPais.add("United Kingdom");
+		opcoesPais.add("United States");
+	
 	}
 	
 	public String salvar(){
